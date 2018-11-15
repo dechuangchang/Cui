@@ -1,11 +1,18 @@
+@import './animation.less';
 body{
     -webkit-tap-highlight-color:transparent;
 }
 header{
-    background: url(../img/logo.gif) no-repeat -200px center;
+    position: relative;
     height: 66px;
     padding: 0px 100px;
-    background-size: contain;
+    .logo{
+        position: absolute;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        animation:logo 1s;
+    }
     ul{
         display: flex;
         align-items: center;
@@ -32,6 +39,7 @@ section{
     background:#ecf0f1 url(../img/banner.png) no-repeat center top;
     background-size: 100% auto;
     letter-spacing: 4px;
+    animation: section 1s;
     .title{
         text-align: center;
         h1{
@@ -65,7 +73,7 @@ section{
         }
     }
     .content{
-
+        
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -75,6 +83,7 @@ section{
             background: white;
             margin: 0px auto;
             margin-top: 88px;
+            animation:content 1s;
             display: flex;
             justify-content: space-around;
             align-items: flex-start;
@@ -91,6 +100,8 @@ section{
                 line-height: 24px;
                 border-top: 4px solid rgba(0, 0, 0, 0);
                 transition: 500ms;
+                color: #333;
+                text-decoration: none;
                 cursor: pointer;
                 &:hover{
                     border-top: 4px solid rgba(48, 68, 255, 0.55);

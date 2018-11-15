@@ -1,0 +1,36 @@
+@keyframes logo {
+  0% {
+    transform: rotateX(0deg);
+  }
+  30% {
+    transform: rotateX(100deg);
+  }
+  60% {
+    transform: rotateX(300deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+@keyframes section {
+  0% {
+    opacity: .3;
+  }
+  30% {
+    opacity: .5;
+  }
+  60% {
+    opacity: .7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes content {
+  0% {
+    margin: 0px;
+  }
+  100% {
+    margin: 88px;
+  }
+}
