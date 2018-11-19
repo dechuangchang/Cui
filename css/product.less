@@ -1,0 +1,207 @@
+@import './animation.less';
+body{
+    -webkit-tap-highlight-color:transparent;
+}
+header{
+    position: relative;
+    height: 66px;
+    padding: 0px 100px;
+    .logo{
+        position: absolute;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        animation:logo 1s;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        li{
+            padding: 0px 20px;
+            display: inline-block;
+            a{
+                font-weight: bold;
+                text-decoration: none;
+                color: #333;
+                // font-size: 13px;
+                &:hover{
+                    color: rgb(32, 152, 246);
+                    text-shadow: 1px 1px 1px rgba(0, 64, 115, 0.30196078)
+                }
+            }
+            
+        }
+    }
+}
+section{
+    background:url(../img/background.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .contentbox{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+
+        margin: 0 auto;
+        button{
+            padding: 7px 20px;
+            background: #1473e4;
+            font-weight: bold;
+            border: none;
+            color: #fff;
+            border-radius: 14px;
+            outline: none;
+            transition: 200ms;
+            cursor: pointer;
+            &:active{
+                box-shadow: 0 0 12px 2px #4e42f0;
+                
+            }
+            &:hover{
+                background: #338bf7;
+            }
+        }
+        .text{
+            width: 30%;
+            text-align: center;
+            h2{
+                font-size: 24px;
+                padding-top: 21%;
+            }
+            p{
+                font-size: 14px;
+                line-height: 22px;
+                padding: 5% 0px;
+            }
+            .butbox{
+                padding: 3%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                
+                buttton{
+                    font-size: 12px;
+                    font-weight: normal;
+                }
+                a{
+                    color: #0071ec;
+                }
+            }
+        }
+        .logo{
+            width: 70%;
+            background: url(../img/logo.gif) no-repeat 90% center;
+            background-size: 142%;
+        }
+    }
+    
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .content-box{
+            letter-spacing: 3px;
+            width: 80%;
+            background: white;
+            margin: 0px auto;   
+            margin-bottom: 100px; 
+            margin-top: 51px;
+            animation:content 1s;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 2% 1%;
+            box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.2);
+            transition: 500ms;
+            &:hover{
+                box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.5);
+            }
+            .item{
+                width: 31%;
+                text-align: left;
+                font-size: 14px;
+                line-height: 24px;
+                border-top: 4px solid rgba(0, 0, 0, 0);
+                transition: 500ms;
+                color: #333;
+                text-decoration: none;
+                text-align: center;
+                
+                &:hover{
+                    border-top: 4px solid rgba(48, 68, 255, 0.55);
+                }
+                h5{
+                    font-weight: inherit;
+                    font-size: 20px;
+                    color: #999;
+                    padding: 10px 0px;
+                }
+                p{
+                    color: #999;
+                }
+                .git-img{
+                    height: 206px;
+                }
+                .git-but{
+                    background: #ffffff;
+                    color: #1473e4;
+                    border: 2px solid #1473e4;
+                    padding: 5px 20px;
+                    border-radius: 16px;
+                    font-size: 14px;
+                    margin-top: 15px;
+                }
+            }
+        }
+        .content-info{
+            width: 80%;
+            margin: 0px auto;
+            padding: 1% 0;
+            text-align: center;
+            margin-bottom: 3%;
+            border-bottom: 2px solid #999;
+            padding-bottom: 3%;
+            h3{
+                padding-top: 4%;
+                font-size: 20px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            p{
+                display: flex;
+                font-size: 14px;
+                color: #333;
+                line-height: 30px;
+                padding-top: 2%;
+                text-align: center;
+            }
+        }
+    }
+
+}
+footer{
+    height: 210px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 100px;
+    background: #333333;
+    color: white;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    dl{
+        dt{
+            padding-bottom: 20px;
+        }
+        dd{
+            font-size: 14px;
+            color: #aaa;
+        }
+    }
+}

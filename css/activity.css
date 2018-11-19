@@ -82,7 +82,6 @@ section p {
 }
 footer {
   height: 210px;
-  width: 100%;
   display: flex;
   flex-direction: row;
   padding: 0px 100px;
