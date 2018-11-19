@@ -99,7 +99,7 @@ section .contentbox button:hover {
   background: #338bf7;
 }
 section .contentbox .text {
-  width: 30%;
+  width: 35%;
   text-align: center;
 }
 section .contentbox .text h2 {
@@ -214,6 +214,8 @@ section .content .content-info p {
 }
 footer {
   height: 210px;
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   padding: 0px 100px;
