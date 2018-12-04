@@ -1,3 +1,7 @@
+.active {
+  color: #2098f6;
+  text-shadow: 1px 1px 1px rgba(0, 64, 115, 0.30196078);
+}
 @keyframes logo {
   0% {
     transform: rotateX(0deg);
@@ -32,6 +36,14 @@
   }
   100% {
     margin: 88px;
+  }
+}
+@keyframes contentTop51 {
+  0% {
+    margin: 0px;
+  }
+  100% {
+    margin: 51px;
   }
 }
 body {
@@ -112,7 +124,7 @@ section .content {
   align-items: center;
 }
 section .content .content-box {
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   width: 80%;
   background: white;
   margin: 0px auto;
