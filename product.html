@@ -20,7 +20,7 @@
         </h1>
         <ul>
             <li>
-                <a  class="active" href="./product.html">产品介绍</a>
+                <a class="active" href="./product.html">产品介绍</a>
             </li>
             <li>
                 <a href="./activity.html">活动</a>
@@ -37,9 +37,10 @@
         <div class="contentbox">
             <div class="text">
                 <h2>高效的管理 OBAS 1.0</h2>
-                <p>OBAS即将推出，全新的应用程序，努力为多重产业赋能,高效、便捷的项目管理方式。
-                    其中包含从业务统筹到项目监管所需的基本功能。
-                </p>
+                <p>OBAS即将推出，全新的应用程序，</p>
+                <p> 努力为多重产业赋能,高效、便捷的项目管理方式。</p>
+                <p> 其中包含从业务统筹到项目监管所需的基本功能。</p>
+
                 <!-- <p class="butbox">
                     <button>了解 OBAS</button>
                     <button>查看新增功能</button>
@@ -57,9 +58,9 @@
         <div class="content">
             <div class="content-box">
                 <a class="item">
-                    <p style="text-align: left;">业务标的</p>
+                    <p class="title">云网络</p>
                     <img class="git-img" src="./img/1.png" />
-                    <h5>点播观看</h5>
+                    
                     <p>
                         可视化的数据统计，精准展示企业经营状况，
                     </p>
@@ -69,32 +70,32 @@
                     <button class="git-but">立即观看</button>
                 </a>
                 <a class="item">
-                        <p>企业管理</p>
-                        <img class="git-img" src="./img/2.png" />
-                        <h5>点播观看</h5>
-                        <p>
-                            
-                            通过对投标、合同、项目等信息的录入，
-                        </p>
-                        <p>
-                            有效管理起企业业务流程。
-                        </p>
-                        <button class="git-but">立即观看</button>
-                    </a>
-                    <a class="item">
-                            <p>项目监督</p>
-                            <img class="git-img" style="animation-play-state: paused;" src="./img/3.png" />
-                            <h5>点播观看</h5>
-                            <p>
-                                对项目全流程的监控及管理，
-                            </p>
-                                <p>
-                                    存储具有价值的业务数据，为大数据分析做足充分准备。
-                                </p>
-                            <button class="git-but">立即观看</button>
-                        </a>
+                    <p class="title">EPR系统</p>
+                    <img class="git-img" src="./img/2.png" />
+                    
+                    <p>
+
+                        通过对投标、合同、项目等信息的录入，
+                    </p>
+                    <p>
+                        有效管理起企业业务流程。
+                    </p>
+                    <button class="git-but">立即观看</button>
+                </a>
+                <a class="item">
+                    <p class="title">项目监督</p>
+                    <img class="git-img" style="animation-play-state: paused;" src="./img/3.png" />
+                    
+                    <p>
+                        对项目全流程的监控及管理，
+                    </p>
+                    <p>
+                        存储具有价值的业务数据，为大数据分析做足充分准备。
+                    </p>
+                    <button class="git-but">立即观看</button>
+                </a>
             </div>
-           
+
         </div>
     </section>
     <footer>
@@ -116,21 +117,22 @@
     </footer>
 </body>
 <script>
-    var image = document.getElementsByClassName("git-img"), 
-    button = document.getElementsByClassName("git-but");
-    
+    var image = document.getElementsByClassName("git-img"),
+        button = document.getElementsByClassName("git-but");
 
-for(var i = 0 ; i< button.length;i++){
-    button[i].index = i;
-    button[i].onclick = function(e) {
-        if (this.innerText == '立即观看') {
-            image[this.index].src = './img/'+(+this.index+1)+'.gif'
-            this.innerText = '停止播放';
-        } else {
-            image[this.index].src = './img/'+(+this.index+1)+'.png'
-            this.innerText = '立即观看';
-        }
-    };
-}
+
+    for (var i = 0; i < button.length; i++) {
+        button[i].index = i;
+        button[i].onclick = function (e) {
+            if (this.innerText == '立即观看') {
+                image[this.index].src = './img/' + (+this.index + 1) + '.gif'
+                this.innerText = '停止播放';
+            } else {
+                image[this.index].src = './img/' + (+this.index + 1) + '.png'
+                this.innerText = '立即观看';
+            }
+        };
+    }
 </script>
+
 </html>

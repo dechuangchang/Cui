@@ -117,11 +117,12 @@ section .contentbox .text {
 section .contentbox .text h2 {
   font-size: 24px;
   padding-top: 21%;
+  padding-bottom: 10px;
 }
 section .contentbox .text p {
   font-size: 14px;
   line-height: 22px;
-  padding: 5% 0px;
+  padding-top: 10px;
 }
 section .contentbox .text .butbox {
   padding: 3%;
@@ -183,6 +184,12 @@ section .content .content-box .item h5 {
   font-size: 20px;
   color: #999;
   padding: 10px 0px;
+}
+section .content .content-box .item .title {
+  color: #4D4D4D;
+  font-weight: bold;
+  padding: 10px 0px;
+  text-align: center;
 }
 section .content .content-box .item p {
   color: #999;
